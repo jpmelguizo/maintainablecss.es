@@ -2,10 +2,10 @@
 layout: chapters
 id: chapters
 permalink: /chapters/
-title: "Chapters"
+title: "Capítulos"
 ---
 
-# Chapters
+# Capítulos
 
 <ol>
 	{% for chapter in site.chapters %}

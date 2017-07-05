@@ -3,57 +3,55 @@ layout: chapter
 title: Javascript
 section: Extras
 permalink: /chapters/javascript/
-description: How to write maintainable CSS and maintainable Javascript at the same time.
+description: Aprende cómo escribir CSS y Javascript mantenible al mismo tiempo.
 ---
 
-We may want to use Javascript to apply the same behaviour to multiple modules or components.
+Es posible que usemos Javascript para aplicar el mismo comportamiento a múltiples módulos o componentes.
 
-For example, we may use a `Collapser` constructor that toggles an element's visibility.
+Por ejemplo, podríamos usar un constructor `Plegar` (Collapser) que haga que un elemento sea visible o invisible.
 
-There are two approaches we can take, both of which complement the CSS approach we've discussed in previous chapters.
+Hay dos enfoques posibles, ambos complementarios a todo lo aplicable al CSS que hemos explicado en los capítulos anteriores.
 
-## 1. Encapsulating state to the module
+## 1. Encapsular el estado en el módulo
 
-To do this, we would need to specify a module-specific state class to the constructor as follows:
+Para ello, necesitamos aplicar una clase de estado específica para cada módulo al constructor:
 
-	var module1Collapser = new Collapser(element1, {
-	  cssHideClass: 'moduleA-isHidden'
+	var modulo1Plegar = new Plegar(elemento1, {
+	  cssClaseOculto: 'moduloA-estaOculto'
 	});
 
-	var module2Collapser = new Collapser(element2, {
-	  cssHideClass: 'moduleB-isHidden'
+	var modulo2Plegar = new Collapser(elemento2, {
+	  cssClaseOculto: 'moduloB-estaOculto'
 	});
 
-Then reuse the CSS styles as follows:
+Y luego reutilizar el CSS así:
 
-	.moduleA-isHidden,
-	.moduleB-isHidden {
+	.moduloA-estaOculto,
+	.moduloB-estaOculto {
       display: none;
 	}
 
-The trade-off is that this list could grow quickly (or use a mixin). And every time we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
+La contrapartida es que esta lista (o el "mixin") puede crecer rápidamente. Y cada vez que añadamos este comportamiento, tenemos que actualizar el CSS. Supondría un pequeño cambio, pero un cambio al fin y al cabo. Para este caso, podríamos considerar una clase de estado global.
 
-## 2. Creating a global state class
+## 2. Crear una clase de estado global
 
-If we find ourselves repeating the exact same set of styles for multiple modules, it might be better to use a global state class as follows:
+Si nos encontramos repitiendo exactamente el mismo conjunto de estilos para muchos módulos, quizás sea mejor usar una clase de estado global de la siguiente manera:
 
-	.globalState-isHidden {
+	.estadoGlobal-estaOculto {
       display: none;
 	}
 
-This approach does away with the long comma-delimited list. And we no longer need to specify the module class when instantiating. This is because the global class will be referenced from within.
+Este enfoque elimina las largas listas de selectores. Tampoco tenemos que especificar la clase del módulo cuando instanciamos, porque la clase global será referenciada desde dentro.
 
-	var module1Collapser = new Collapser(element1);
-	var module2Collapser = new Collapser(element2);
+	var modulo1Plegar = new plegar(elemento1);
+	var modulo2Plegar = new plegar(elemento2);
 
-However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, which is something we've discussed in [State](/chapters/state/).
+Sin embargo, esto no siempre tiene sentido. Podemos tener dos módulos distintos el mismo *comportamiento*, pero con distinta *apariencia*, algo de lo que ya hemos hablado en [Estados](/chapters/estados/).
 
-## 3. The best of both worlds
+## 3. Lo mejor de ambos mundos
 
-We could combine the two approaches by defaulting the class to the global state class. And then only when needed we can specify a class during instantiation as shown in the first example above.
+Podemos combinar los dos enfoques, usando por defecto la clase de estado global y solo cuando sea necesario, especificar una clase al instanciar como en el primer ejemplo.
 
-## Final thought
+## Conclusión
 
-When we think about state, particularly with our Javascript hat on, we need to consider how this state affects behaviour as well as style. Different components may share the same behaviour, but they may look rather different. After careful consideration, we can choose the right solution to the problem.
-
-<!-- display: flex vs display: block -->
+Cuando pensamos en estados, particularmente cuando tenemos Javascript en la cabeza, necesitamos considerar como afectan tanto al comportamiento como a la apariencia. Distintos componentes pueden compartir comportamiento, pero es posible que su apariencia sea bien distinta. Si lo consideramos cuidadosamente, podemos elegir la solución correcta al problema.

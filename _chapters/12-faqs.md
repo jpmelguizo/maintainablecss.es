@@ -3,70 +3,30 @@ layout: chapter
 title: FAQs
 section: Extras
 permalink: /chapters/faqs/
-description: Your questions about MaintainableCSS are answered here.
+description: Tus preguntas sobre MaintainableCSS y sus respuestas.
 ---
 
-If you can't find an answer, please [raise an issue on Github](https://github.com/adamsilver/maintainablecss.com/issues/new). Thanks!
+Si no puedes encontrar una respuesta, por favor [inicia una "issue" en Github](https://github.com/adamsilver/maintainablecss.com/issues/new). ¡Gracias!
 
-## Can I translate your book?
+## ¿Puedo traducir tu libro?
 
-Yes. To do this:
+Si. Haz esto:
 
-1. [Fork the repo](https://github.com/adamsilver/maintainablecss.com/).
-2. Point your (country code) domain to it.
-3. Cite the original and let me know :).
+1. [Haz "fork" del repositorio](https://github.com/adamsilver/maintainablecss.com/).
+2. Dirige la extensión de dominio de tu país hacia él.
+3. Cita el original y hámelo saber :).
 
-<!-- ## When should I use this?
+## ¿Qué pasa con la herencia para encabezados, etc?
 
-If you like to keep things truly simple, use this approach. It works well if you're building long-lived, bespokely designed, responsive sites that scale and evolve over time. -->
-
-## What about inheritance for headings etc?
-
-Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are identical. In this case we can declare the following CSS:
+Idealmente, nuestro HTML semántico refleja integralmente nuestro diseño visual. En el caso de que nuestros `h1`s sean idénticos, podemos declarar el siguiente CSS:
 
 	h1 {
       /* etc */
 	}
 
-However, this is rarely the case, in commercial, large-scale websites. In this case we should encapsulate styles to the module in question:
+Sin embargo, rara vez se cumple esto en aplicaciones comerciales de gran escala. Para este caso debemos encapsular los estilos afectados en módulos:
 
-	.module-heading {
+	.modulo-encabezado {
 	  font-size: ...;
 	  color: ...;
 	}
-
-<!--## Where do I put media queries?
-
-The screen should adapt to the content, not the other way around.
-
-This means a module's breakpoints shouldn't be predetermined by *small*, *medium* and *large*. Doing this constrains the design and degrades the user experience.
-
-Therefore, all styles&mdash;even those that are wrapped in media queries&mdash;should be located next to regular styles:
-
-	.basket {}
-
-	@media(min-width: 500px) {
-      .basket {}
-	}
-
-	@media(min-width: 1000px) {
-	  .basket {}
-	}
-
-	.basket-heading {}
-
-## Where do I put modifiers and states?
-
-States and modifiers, similarly to media queries, should be located in close proximity to the element they pertain to:
-
-	.basket {}
-
-	.basket-isHidden {}
-
-	.basket-heading {}
-
-	.basket-heading--someModifier {}-->
-
-## Can't find an answer here?
-
-Raise an issue on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you as soon as I can. Thanks!

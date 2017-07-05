@@ -1,6 +1,6 @@
-name: MaintainableCSS - an approach to writing modular, scalable and maintainable CSS | By Adam Silver
+name: MaintainableCSS - an approach to writing modular, scalable and maintainable CSS | por Adam Silver
 markdown: kramdown
-url: https://maintainablecss.com
+url: https://maintainablecss.es
 include: ['_pages']
 collections:
   chapters:
