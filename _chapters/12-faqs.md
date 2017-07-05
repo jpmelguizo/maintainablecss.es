@@ -2,7 +2,7 @@
 layout: chapter
 title: FAQs
 section: Extras
-permalink: /chapters/faqs/
+permalink: /capitulos/faqs/
 description: Tus preguntas sobre MaintainableCSS y sus respuestas.
 ---
 

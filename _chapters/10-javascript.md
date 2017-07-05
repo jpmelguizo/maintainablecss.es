@@ -2,7 +2,7 @@
 layout: chapter
 title: Javascript
 section: Extras
-permalink: /chapters/javascript/
+permalink: /capitulos/javascript/
 description: Aprende cómo escribir CSS y Javascript mantenible al mismo tiempo.
 ---
 
@@ -46,7 +46,7 @@ Este enfoque elimina las largas listas de selectores. Tampoco tenemos que especi
 	var modulo1Plegar = new plegar(elemento1);
 	var modulo2Plegar = new plegar(elemento2);
 
-Sin embargo, esto no siempre tiene sentido. Podemos tener dos módulos distintos el mismo *comportamiento*, pero con distinta *apariencia*, algo de lo que ya hemos hablado en [Estados](/chapters/estados/).
+Sin embargo, esto no siempre tiene sentido. Podemos tener dos módulos distintos el mismo *comportamiento*, pero con distinta *apariencia*, algo de lo que ya hemos hablado en [Estados](/capitulos/estados/).
 
 ## 3. Lo mejor de ambos mundos
 

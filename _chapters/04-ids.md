@@ -2,7 +2,7 @@
 layout: chapter
 title: IDs
 section: Background
-permalink: /chapters/ids/
+permalink: /capitulos/ids/
 description: Aprende porqué usar IDs para aplicar estilos puede generar problemas y qué hacer en su lugar.
 ---
 Semanticamente hablando, debemos usar un ID (identificador) cuando existe una sola instancia de algo y debemos usar clases cuando hay varias.

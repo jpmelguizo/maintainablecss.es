@@ -1,5 +1,7 @@
 # MaintainableCSS
 
-Write CSS without worrying that overzealous, pre-existing styles will cause problems. MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.
+Escribe CSS sin preocuparte de que el código anterior cause problemas. MaintainableCSS es una propuesta para crear CSS modular, escalable y, por supuesto, mantenible.
 
-[Visit website](http://maintainablecss.com)
+[Traducción al español](http://maintainablecss.es).
+
+[Visita el sitio web original](http://maintainablecss.com).

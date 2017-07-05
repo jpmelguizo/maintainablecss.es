@@ -2,7 +2,7 @@
 layout: chapter
 title: Módulos
 section: Core
-permalink: /chapters/modulos/
+permalink: /capitulos/modulos/
 description: Aprende la diferencia entre módulos y componentes y cómo identificarlos en un diseño. También crearemos algunos módulos de ejemplo.
 ---
 

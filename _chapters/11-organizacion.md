@@ -2,7 +2,7 @@
 layout: chapter
 title: Organización
 section: Extras
-permalink: /chapters/organizacion/
+permalink: /capitulos/organizacion/
 description: Aprende a organizar tus archivos CSS.
 ---
 

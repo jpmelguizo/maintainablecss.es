@@ -2,7 +2,7 @@
 layout: chapter
 title: Introducción
 section: Preface
-permalink: /chapters/introduccion/
+permalink: /capitulos/introduccion/
 description: Introducción a MaintainableCSS, una propuesta para crear CSS modular, escalable y mantenible.
 ---
 

@@ -2,7 +2,7 @@
 layout: chapter
 title: Convenciones
 section: Core
-permalink: /chapters/convenciones/
+permalink: /capitulos/convenciones/
 description: Aprende las convenciones aplicadas en MaintainableCSS para escribir módulos, componentes y estados.
 ---
 

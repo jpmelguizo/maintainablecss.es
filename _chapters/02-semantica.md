@@ -2,7 +2,7 @@
 layout: chapter
 title: Semántica
 section: Background
-permalink: /chapters/semantica/
+permalink: /capitulos/semantica/
 description: Aprende porqué nombrar algo basandose en lo que es, en lugar de en cómo se ve o lo que hace, es el fundamento del CSS mantenible y bien estructurado.
 ---
 

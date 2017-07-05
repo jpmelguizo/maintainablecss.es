@@ -2,7 +2,7 @@
 layout: chapter
 title: Versiones
 section: Extras
-permalink: /chapters/versiones/
+permalink: /capitulos/versiones/
 description: Aprende como MaintainableCSS hace muy fácil actualizar módulos y realizar tests AB en sitios web en continuo crecimiento.
 ---
 

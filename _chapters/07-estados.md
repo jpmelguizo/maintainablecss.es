@@ -2,7 +2,7 @@
 layout: chapter
 title: Estados
 section: Core
-permalink: /chapters/estados/
+permalink: /capitulos/estados/
 description: Aprende a administrar los diferentes estilos de tus módulos y componentes basados en sus estados, como mostrado, escondido y cargando.
 ---
 
@@ -29,7 +29,7 @@ La clase tiene el nombre del módulo (o componente) como prefijo porque, aunque 
 
 ## ¿Qué pasa al reutilizar estados?
 
-Algunas veces, quizás querramos reutilizar un estado en distintos módulos o componentes. Por ejemplo, hacer que un elemento sea visible o invisible. Esto se discute en más detalle en el capítulo [Javascript](/chapters/javascript/).
+Algunas veces, quizás querramos reutilizar un estado en distintos módulos o componentes. Por ejemplo, hacer que un elemento sea visible o invisible. Esto se discute en más detalle en el capítulo [Javascript](/capitulos/javascript/).
 
 
 ## ¿Qué pasa con los atributos ARIA?

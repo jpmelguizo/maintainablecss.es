@@ -2,7 +2,7 @@
 layout: chapter
 title: Modificadores
 section: Core
-permalink: /chapters/modificadores/
+permalink: /capitulos/modificadores/
 description: Aprende a usar modificadores para cambiar la apariencia si existen ligeras diferencias.
 ---
 
@@ -56,4 +56,4 @@ De nuevo, esto funciona porque las diferencias están bien identificadas y se en
 
 ## Conclusión
 
-Los modificadores son una buena manera de reutilizar estilos en elementos bien definidos. El modificador en si debe considerarse como un ajuste. Si contiene muchas sobreescrituras, quizás sea la manera de proceder. En su lugar usa un [módulo](/chapters/modulos/).
+Los modificadores son una buena manera de reutilizar estilos en elementos bien definidos. El modificador en si debe considerarse como un ajuste. Si contiene muchas sobreescrituras, quizás sea la manera de proceder. En su lugar usa un [módulo](/capitulos/modulos/).
