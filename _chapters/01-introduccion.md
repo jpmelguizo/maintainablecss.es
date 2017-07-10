@@ -22,9 +22,9 @@ Escalable significa que, a pesar de que el código CSS aumente en tamaño, siga 
 
 ## ¿Qué significa modular?
 
-Un módulo es una unidad independiente que puede combinarse con otras para formar estructuras más complejas. En una sala de estar podríamos considerar a la tele, el sofa y los cuadros como módulos, formando todos juntos la habitación.
+Un módulo es una unidad independiente que puede combinarse con otras para formar estructuras más complejas. En una sala de estar podríamos considerar a la tele, el sofá y los cuadros como módulos, formando todos juntos la habitación.
 
-Si quitamos una de estas unidades, las otras siguen funcionando. No necesitamos la tele para sentarnos en el sofa, etc. En una web, la cabecera, formulario de registro, carrito de compra, lista de productos, navegación y promociones de la página de inicio, podrían considerarse como módulos.
+Si quitamos una de estas unidades, las otras siguen funcionando. No necesitamos la tele para sentarnos en el sofá, etc. En una web, la cabecera, formulario de registro, carrito de compra, lista de productos, navegación y promociones de la página de inicio, podrían considerarse como módulos.
 
 ## ¿Es útil para mi?
 

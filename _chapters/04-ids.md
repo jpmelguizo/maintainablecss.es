@@ -7,13 +7,13 @@ description: Aprende porqué usar IDs para aplicar estilos puede generar problem
 ---
 Semanticamente hablando, debemos usar un ID (identificador) cuando existe una sola instancia de algo y debemos usar clases cuando hay varias.
 
-Sin embargo, [los ids tienen un rango mucho mayor ](http://www.w3.org/TR/css3-selectors/#specificity), lo que es un problema si queremos sobreescribir un estilo.
+Sin embargo, [los ids tienen un rango mucho mayor ](http://www.w3.org/TR/css3-selectors/#specificity), lo que es un problema si queremos sobrescribir un estilo.
 
-Para demostrar el problema, vamos a sobreescribir el color de un elemento de *rojo* a *azul* usando un ID.
+Para demostrar el problema, vamos a sobrescribir el color de un elemento de *rojo* a *azul* usando un ID.
 
 Este es el HTML:
 
-	<div id="modulo" class="modulo-sobreescrito">
+	<div id="modulo" class="modulo-sobrescrito">
 
 Y este, el CSS:
 
@@ -21,14 +21,14 @@ Y este, el CSS:
 	  color: red;
 	}
 
-	.modulo-sobreescrito {
+	.modulo-sobrescrito {
 	  color: blue;
 	}
 
-El elemento será rojo aunque la clase `modulo-sobreescrito` lo declare como azul. Arreglémoslo cambiando el ID por una clase:
+El elemento será rojo aunque la clase `modulo-sobrescrito` lo declare como azul. Arreglémoslo cambiando el ID por una clase:
 
 
-	<div class="modulo modulo-sobreescrito">
+	<div class="modulo modulo-sobrescrito">
 
 Y su CSS:
 
@@ -36,7 +36,7 @@ Y su CSS:
 	  color: red;
 	}
 
-	.modulo-sobreescrito {
+	.modulo-sobrescrito {
 	  color: blue;
 	}
 

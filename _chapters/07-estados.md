@@ -25,11 +25,11 @@ Y su CSS:
       background-color: #eee;
 	}
 
-La clase tiene el nombre del módulo (o componente) como prefijo porque, aunque los estados puedan ser comunes, los estilos asociados no tienen porqué. Por ejemplo, un *carrito* vacío puede tener un fondo gris, mientras que unos resultados de búsqueda vacíos pueden tener una imágen posicionada de forma absoluta.
+La clase tiene el nombre del módulo (o componente) como prefijo porque, aunque los estados puedan ser comunes, los estilos asociados no tienen porqué. Por ejemplo, un *carrito* vacío puede tener un fondo gris, mientras que unos resultados de búsqueda vacíos pueden tener una imagen posicionada de forma absoluta.
 
 ## ¿Qué pasa al reutilizar estados?
 
-Algunas veces, quizás querramos reutilizar un estado en distintos módulos o componentes. Por ejemplo, hacer que un elemento sea visible o invisible. Esto se discute en más detalle en el capítulo [Javascript](/capitulos/javascript/).
+Algunas veces, quizás queramos reutilizar un estado en distintos módulos o componentes. Por ejemplo, hacer que un elemento sea visible o invisible. Esto se discute en más detalle en el capítulo [Javascript](/capitulos/javascript/).
 
 
 ## ¿Qué pasa con los atributos ARIA?
@@ -40,7 +40,7 @@ Además, usar un selector de atributo (en lugar de clase) tiene [menor soporte](
 
 ## ¿Qué pasa si encadenamos clases?
 
-Podríamos usar un selector encadenado para representar estados, por ejemplo:  `.modulo.estaDesactivado`. El problema es que este enfoque tiene menor soporte en navegadores. Hay que evitar patrones que excluyen usuarios innecesariamente, a no ser que tenamos una razón de peso para usarlos.
+Podríamos usar un selector encadenado para representar estados, por ejemplo:  `.modulo.estaDesactivado`. El problema es que este enfoque tiene menor soporte en navegadores. Hay que evitar patrones que excluyen usuarios innecesariamente, a no ser que tengamos una razón de peso para usarlos.
 
 ## Conclusión
 

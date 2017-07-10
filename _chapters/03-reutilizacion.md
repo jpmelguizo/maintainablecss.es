@@ -6,7 +6,7 @@ permalink: /capitulos/reutilizacio/
 description: Aprende porqué evitar la reutilización de elementos y aceptar la repetición hace que nuestro CSS sea más fácil de mantener.
 ---
 
-Según Harry Roberts, *DRY (don't repeat yourself) es a menudo malinterpretado como la necesidad de nunca repetir lo mismo más de una vez. Esto no es práctico, es habitualmente contraproductivo y puede llevar a abstracciones forzadas y codigo enrevesado e innecesariamente complejo.*
+Según Harry Roberts, *DRY (don't repeat yourself) es a menudo malinterpretado como la necesidad de nunca repetir lo mismo más de una vez. Esto no es práctico, es habitualmente contraproductivo y puede llevar a abstracciones forzadas y código enrevesado e innecesariamente complejo.*
 
 Estas abstracciones forzadas y complejidad innecesaria resultan normalmente en clases visuales y atómicas. Ya las hemos repasado en el capítulo [semántica](/capitulos/semantica/) y sabemos lo inconvenientes que son. Los "mixins" también pueden crear problemas como veremos a continuación.
 
@@ -14,7 +14,7 @@ Aunque a veces tendemos a abstraer nuestro CSS demasiado, hay ocasiones en las q
 
 ## ¿Cómo podemos reutilizar un estilo?
 
-Si queremos reutilizar un estilo, una opción sería delimitar con comas una lista de selectores en un archivo con nombre reconocible. Si sabes algo de SASS, esto es exactamente lo que los `@extends` hacen. Por ejemplo, si múltiples elementos necesitan un texto de color rojo, podriamos hacer:
+Si queremos reutilizar un estilo, una opción sería delimitar con comas una lista de selectores en un archivo con nombre reconocible. Si sabes algo de SASS, esto es exactamente lo que los `@extends` hacen. Por ejemplo, si varios elementos necesitan un texto de color rojo, podemos hacer:
 
 	.unaCosa,
 	.otraCosa {
@@ -23,7 +23,7 @@ Si queremos reutilizar un estilo, una opción sería delimitar con comas una lis
 
 Este enfoque se debe usar cuando sea conveniente y no para mejorar el rendimiento. Si la abstracción solo tiene una regla, solo estamos cambiando una línea de código por otra.
 
-Si algún selector se desvía de las reglas establecidas en la abstracción, debe ser eliminado de la lista. De otra manera, podría caer en regresión con otros selectores y crear problemas de sobreescritura de estilos.
+Si algún selector se desvía de las reglas establecidas en la abstracción, debe ser eliminado de la lista. De otra manera, podría caer en regresión con otros selectores y crear problemas de sobrescritura de estilos.
 
 Es importante resaltar que esta es solo una de varias técnicas a nuestra disposición. Cuando un *concepto* ha sido comprendido correctamente, podemos hacer uso de otras técnicas, que discutiremos en [Módulos](/capitulos/modulos/), [Estados](/capitulos/estados/) y [Modificadores](/capitulos/modificadores/).
 
@@ -31,7 +31,7 @@ Es importante resaltar que esta es solo una de varias técnicas a nuestra dispos
 
 Los "mixins" nos dan lo mejor de ambos mundos. Al menos en teoría.
 
-Al igual que las clases utilitarias, actualizar un "mixin" propaga los cambios a todas sus instancias. Si no controlamos qué está usando ese "mixin", aumentamos el riesgo de regresión. En lugar de actualizarlo podríamos crear uno nuevo, pero esto causaria redundancia.
+Al igual que las clases utilitarias, actualizar un "mixin" propaga los cambios a todas sus instancias. Si no controlamos qué está usando ese "mixin", aumentamos el riesgo de regresión. En lugar de actualizarlo podríamos crear uno nuevo, pero esto causaría redundancia.
 
 Además, normalmente los "mixins" acaban teniendo muchas reglas, parámetros y condiciones. Algo que añade complejidad, y la complejidad es difícil de mantener.
 

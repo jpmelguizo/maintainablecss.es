@@ -14,7 +14,7 @@ Si. Haz esto:
 
 1. [Haz "fork" del repositorio](https://github.com/adamsilver/maintainablecss.com/).
 2. Dirige la extensión de dominio de tu país hacia él.
-3. Cita el original y hámelo saber :).
+3. Cita el original y házmelo saber :).
 
 ## ¿Qué pasa con la herencia para encabezados, etc?
 

@@ -3,12 +3,12 @@ layout: chapter
 title: Semántica
 section: Background
 permalink: /capitulos/semantica/
-description: Aprende porqué nombrar algo basandose en lo que es, en lugar de en cómo se ve o lo que hace, es el fundamento del CSS mantenible y bien estructurado.
+description: Aprende porqué nombrar algo basándose en lo que es, en lugar de en cómo se ve o lo que hace, es el fundamento del CSS mantenible y bien estructurado.
 ---
 
 La semántica de HTML no trata solo de los elementos que usamos. Es bastante obvio que debemos usar `<a>` para enlaces, `<table>` para datos tabulares y `<p>` para párrafos. Lo que no es tan obvio es qué nombres darle a las clases.
 
-Como dice Phil Karton, *solo hay dos cosas difícil en las Ciencias de la computación: la invalidación de cachés y **nombrar cosas***.
+Como dice Phil Karton, *solo hay dos cosas difícil en las Ciencias de la computación: la invalidación de caché y **nombrar cosas***.
 
 Nombrar es, francamente, el aspecto más importante al escribir CSS mantenible. Hay dos enfoques: el semántico y el no semántico. Veamos de qué tratan.
 
@@ -28,9 +28,9 @@ Ejemplos de clases semánticas:
 	<div class="producto">
 	<div class="resultadosBusqueda">
 
-Las clases semánticas no reflejan los estilos. No pasa nada, para eso esta CSS. Las clases semánticas significan algo para HTML, CSS, Javascript y test automatizados.
+Las clases semánticas no reflejan los estilos. No pasa nada, para eso está CSS. Las clases semánticas significan algo para HTML, CSS, Javascript y test automatizados.
 
-Hay muchas razonas por las que usar clases semánticas puede resultar beneficioso:
+Hay muchas razones por las que usar clases semánticas puede resultar beneficioso:
 
 ## 1. Son legibles
 
@@ -47,7 +47,7 @@ notas:
 - Las abreviaturas tienen que desglosarse antes de poder obtener un modelo mental, asumiendo que entendamos lo que significan.
 - Es muy difícil leer un grupo de clases juntas.
 - Tenemos que ir tanteando muchas clases para saber de qué va la cosa, qué clases sobrescriben a otras, cuáles se aplican en puntos de ruptura (breakpoints), etc.
-- Estas clases son ambiguas. Por ejemplo, ¿se refiere `black-70` a `color` o a `background`? Si necesitamos usar el inspector del navegador para enterarnos, esta claro que esta clase no es legible.
+- Estas clases son ambiguas. Por ejemplo, ¿se refiere `black-70` a `color` o a `background`? Si necesitamos usar el inspector del navegador para enterarnos, está claro que esta clase no es legible.
 - El contenido está ofuscado por el HTML que lo rodea.
 
 Aquí tenemos el mismo ejemplo con clases semánticas:
@@ -118,7 +118,7 @@ En algunos casos es incluso mejor usar estilos en línea (inline). Son más expl
 
 > Pregunta: ¿No nos da `.red` exactamente la misma abstracción que se consigue en CSS con `color: red`?
 
-## 6. Proporcion "hooks" para tests funcionales automatizados
+## 6. Proporcionan "hooks" para tests funcionales automatizados
 
 Los test funcionales automatizados funcionan buscando e interactuando con elementos, pudiendo incluir:
 
@@ -130,7 +130,7 @@ Los test funcionales automatizados funcionan buscando e interactuando con elemen
 
 No podemos usar clases no semánticas para elegir elementos concretos. Añadir ganchos específicamente solo para realizar tests no es eficaz, el usuario tendría que descargar toda el código extra.
 
-## 7. Proporcinan "hooks" para Javascript
+## 7. Proporcionan "hooks" para Javascript
 
 Al igual que en el punto anterior, las clases no semánticas no sirven si queremos seleccionar elementos concretos para aplicar Javascript.
 
@@ -160,8 +160,8 @@ Cambiar el espaciado y el color al pasar el ratón por encima del elemento (hove
 
 ## 12. Producen menos código HTML
 
-Como hemos ido viendo, las clases atómicas inflan el HTML. Lás clases semánticas producen un HTML más corto. Aunque el CSS puede incrementar en tamaño, se puede "cachear".
+Como hemos ido viendo, las clases atómicas inflan el HTML. Las clases semánticas producen un HTML más corto. Aunque el CSS puede incrementar en tamaño, se puede "cachear".
 
 ## Conclusión
 
-Las cláses semánticas son la piedra angular de *MaintainableCSS*. Sin ellas, lo demás no tiene mucho sentido. Así que empieza nombrando las cosas según lo que son y todo lo demás vendrá rodado.
+Las clases semánticas son la piedra angular de *MaintainableCSS*. Sin ellas, lo demás no tiene mucho sentido. Así que empieza nombrando las cosas según lo que son y todo lo demás vendrá rodado.

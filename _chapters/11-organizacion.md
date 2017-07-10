@@ -67,7 +67,7 @@ En producción no es un problema, ya que solemos empaquetar todo nuestro CSS par
 
 **Si compilas tu CSS** desarrollando en local (como es normal al usar preprocesadores) no necesitas preocuparte. El preprocesador empaquetará los archivos por ti.
 
-**Si no compilas tu CSSI** desarrollando en localfor local (porque depurar es más fácil de esta manera) puedes remediar el problema mediante uno de estos dos enfoques:
+**Si no compilas tu CSSI** desarrollando en local (porque depurar es más fácil de esta manera) puedes remediar el problema mediante uno de estos dos enfoques:
 
 ### 1. Añade la opción de concatenar CSS localmente
 

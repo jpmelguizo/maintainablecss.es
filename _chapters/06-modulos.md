@@ -12,7 +12,7 @@ description: Aprende la diferencia entre módulos y componentes y cómo identifi
 
 En una sala de estar, podríamos considera la televisión, el sofá o los cuadros de la pared como módulos. Todos se combinan para hacer una habitación usable.
 
-Si quitámos alguno de esos módulos, los otros siguen funcionando. No necesitamos la tele para poder sentarnos en el sofá, etc.
+Si quitamos alguno de esos módulos, los otros siguen funcionando. No necesitamos la tele para poder sentarnos en el sofá, etc.
 
 En una web, su cabecera, formulario de registro, carrito de compra, navegación y promociones de la página de inicio pueden considerarse como módulos.
 
@@ -20,9 +20,9 @@ En una web, su cabecera, formulario de registro, carrito de compra, navegación 
 
 Un módulo está hecho de componentes. Sin componentes, un módulo estaría incompleto o roto.
 
-Por ejemplo, un sofa tiene una estructura, patas, acholchado del asiento, etc. todos ellos son componentes básicos para usar el diseño de la forma para la cual se diseño.
+Por ejemplo, un sofá tiene una estructura, patas, acolchado del asiento, etc. Todos ellos son componentes básicos para usar el diseño de la forma para la cual se diseño.
 
-Un *módulo* logotipo puede consistir en un texto, una imágen y un enlace, cada uno es un componente. Sin la imagen el logotipo está roto y sin el enlace estaría incompleto.
+Un *módulo* logotipo puede consistir en un texto, una imagen y un enlace, cada uno es un componente. Sin la imagen el logotipo está roto y sin el enlace estaría incompleto.
 
 ## Módulos vs componentes
 
@@ -30,14 +30,13 @@ En ocasiones es difícil decidir si algo debería ser un componente o un módulo
 
 En un proyecto reciente, tenía sentido que el logo fuera un componente y el menú un módulo ¿Cómo queda la cabecera sin logo? El menú de navegación podría colocarse por debajo de la cabecera en algún momento.
 
-Nadie entiende los tus requisitos tan bien como tu. A través de la experiencia obtendras un sentido especial para ello. Y si algo sale mal, es muy fácil cambiar de componente a módulo.
+Nadie entiende los requisitos de tu proyecto tan bien como tu. A través de la experiencia obtendrás un sentido especial para ello. Y si algo sale mal, es muy fácil cambiar de componente a módulo.
 
 Suficiente teoría por hoy. Vamos a construir tres módulos distintos. Al hacerlo, espero que cubrir todas las cosas en las que solemos pensar al escribir CSS.
 
 ## 1. Creando un módulo de carrito de compra
 
-Vamos a simplicar este carrito para ser más breves. Cada producto en el carrito mostrará su título y la posibilidad de eliminarlo.
-
+Vamos a simplificar este carrito para ser más breves. Cada producto en el carrito mostrará su título y la posibilidad de eliminarlo.
 
 La plantilla podría ser esta:
 
@@ -67,7 +66,7 @@ Sin embargo, tiene una estética diferente y no permite eliminar los productos, 
 
 El primer asunto a resolver es la tentación de reusar la plantilla y el CSS del carrito. Si, son parecidos, pero no son lo mismo.
 
-Si tratamos de combinar ambos, entrelazaríamos dos módulos sobreescribiendo plantillas y CSS. Algo que es complejo de por si y sería difícil de mantener. Es mejor evitarlo directamente.
+Si tratamos de combinar ambos, entrelazaríamos dos módulos sobrescribiendo plantillas y CSS. Algo que es complejo de por si y sería difícil de mantener. Es mejor evitarlo directamente.
 
 En lugar de reutilizar o mezclar, debemos crear un nuevo módulo con la siguiente plantilla:
 
@@ -89,7 +88,7 @@ Manteniendo las cosas separadas mantenemos la sencillez. La sencillez es el aspe
 
 ## 3. Creando un módulo botón
 
-Como nuestro carrito de compra solo aparece en la página "carrito", no consideramos la posibilidad de reusarlo en otros sitios. Además, no pensamos en el hecho de que el botón de eliminar es un componente del módulo carrito, haciendolo más difícil de reutilizar en otros módulos.
+Como nuestro carrito de compra solo aparece en la página "carrito", no consideramos la posibilidad de reusarlo en otros sitios. Además, no pensamos en el hecho de que el botón de eliminar es un componente del módulo carrito, haciéndolo más difícil de reutilizar en otros módulos.
 
 Los botones son un ejemplo de algo que podríamos reutilizar en muchos sitios y potencialmente *dentro* de distintos módulos. Un botón no es muy útil por si solo.
 
@@ -107,7 +106,7 @@ Por ejemplo, dentro de un módulo, un botón puede flotar a la derecha junto a a
 
 Idealmente, deberíamos limar estas inconsistencias en el *diseño*, antes de que lleguen al código. Pero esto no es siempre posible y en este ejemplo, asumiremos que tenemos que solucionarlo nosotros.
 
-Es por estas diferencias por lo que abstraer reglas comunes puede ser complicado, y no queremos lidiar con un lio de reglas que se sobreescriben unas a otras. O lo que es peor, acabar con miedo a actualizar alguna regla.
+Es por estas diferencias por lo que abstraer reglas comunes puede ser complicado, y no queremos lidiar con un lío de reglas que se sobrescriben unas a otras. O lo que es peor, acabar con miedo a actualizar alguna regla.
 
 Para evitar estos problemas, podemos usar un "mixin" o una lista de reglas comunes que no estén afectadas por sus contextos. Por ejemplo:
 
@@ -119,7 +118,7 @@ Para evitar estos problemas, podemos usar un "mixin" o una lista de reglas comun
       color: #fff;
 	}
 
-Observa que en este emplo, no especificamos `float`, `margin` o `width` etc. Esos estilos se aplican en el botón correspondiente:
+Observa que en este ejemplo, no especificamos `float`, `margin` o `width` etc. Esos estilos se aplican en el botón correspondiente:
 
 	.carrito-botonEliminar {
 	  float: right;
@@ -129,9 +128,9 @@ Observa que en este emplo, no especificamos `float`, `margin` o `width` etc. Eso
 	  margin-bottom: 10px;
 	}
 
-Lo que parece sensato, ya que podemos optar por añadir otros selectores a estos estilos comunes, lo contrario de tener que sobreescribir estilos. Pero nos queda otra opción.
+Lo que parece sensato, ya que podemos optar por añadir otros selectores a estos estilos comunes, lo contrario de tener que sobrescribir estilos. Pero nos queda otra opción.
 
-Imagina un proceso de compra en el que cada página tiene un botón para continuar y un enlace para volver atrás. Podriamos reutilizarlo convirtiéndolo en un módulo:
+Imagina un proceso de compra en el que cada página tiene un botón para continuar y un enlace para volver atrás. Podríamos reutilizarlo convirtiéndolo en un módulo:
 
 	<div class="procesoCompra">
 	  <input class="procesoCompra-continuar">

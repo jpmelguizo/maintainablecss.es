@@ -6,7 +6,7 @@ permalink: /capitulos/modificadores/
 description: Aprende a usar modificadores para cambiar la apariencia si existen ligeras diferencias.
 ---
 
-Como los estados, los modificadores sobreescriben estilos. Son útiles cuando un módulo (o componente) tiene pequeñas diferencias fáciles de entender.
+Como los estados, los modificadores sobrescriben estilos. Son útiles cuando un módulo (o componente) tiene pequeñas diferencias fáciles de entender.
 
 Imaginemos una tienda online donde cada categoría tiene una imagen de fondo distinta en la cabecera. Todas las cabeceras tienen el mismo `padding`, `margin`, etc. La única diferencia es la imagen de fondo.
 
@@ -56,4 +56,4 @@ De nuevo, esto funciona porque las diferencias están bien identificadas y se en
 
 ## Conclusión
 
-Los modificadores son una buena manera de reutilizar estilos en elementos bien definidos. El modificador en si debe considerarse como un ajuste. Si contiene muchas sobreescrituras, quizás sea la manera de proceder. En su lugar usa un [módulo](/capitulos/modulos/).
+Los modificadores son una buena manera de reutilizar estilos en elementos bien definidos. El modificador en si debe considerarse como un ajuste. Si contiene muchas sobrescrituras, quizás sea la manera de proceder. En su lugar usa un [módulo](/capitulos/modulos/).

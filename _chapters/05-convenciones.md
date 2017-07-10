@@ -29,11 +29,11 @@ Notas:
 
 ## ¿Tengo que darle un nombre de clase a todos los elementos?
 
-No. Puedes usar `.resultadosBusqueda p` si quieres. Tendrás que hacerlo así si usas "markdown" por ejemplo. Pero ten cuidado si vas a anidar otro módulo que contenga `p` porque heredará los estilos y necesitará que los sobreescribas.
+No. Puedes usar `.resultadosBusqueda p` si quieres. Tendrás que hacerlo así si usas "markdown" por ejemplo. Pero ten cuidado si vas a anidar otro módulo que contenga `p` porque heredará los estilos y necesitará que los sobrescribas.
 
 ## ¿Por qué hay que poner el nombre del módulo como prefijo?
 
-Buena pregunta. Un ejeplo sin prefijos:
+Buena pregunta. Un ejemplo sin prefijos:
 
 	<div class="carrito">
 	  <div class="cabecera">
